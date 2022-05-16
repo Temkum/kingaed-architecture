@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './nav.scss';
 import Logo from '../../assets/kingaed_dark.png';
 import Topbar from '../topbar/Topbar';
@@ -7,16 +8,15 @@ const Nav = () => {
   return (
     <>
       <Topbar />
-      <header id="header" className="header">
+      <header id="header" className="header-two">
         <div className="site-navigation">
           <div className="container">
             <div className="row">
               <div className="col-lg-12">
                 <nav className="navbar navbar-expand-lg navbar-light p-0">
                   <div className="logo">
-                    <a className="d-block" href="#!">
-                      <img loading="lazy" src={Logo} alt="Kingaed" />
-                    </a>
+                    <Link to="/" className="d-block" />
+                    <img loading="lazy" src={Logo} alt="Kingaed" />
                   </div>
                   <button
                     className="navbar-toggler"
@@ -40,6 +40,12 @@ const Nav = () => {
                         </a>
                       </li>
                       <li className="nav-item dropdown">
+                        <a href="#" className="nav-link ">
+                          Projects
+                        </a>
+                      </li>
+
+                      <li className="nav-item dropdown">
                         <a
                           href="#"
                           className="nav-link dropdown-toggle"
@@ -49,10 +55,10 @@ const Nav = () => {
                         </a>
                         <ul className="dropdown-menu" role="menu">
                           <li>
-                            <a href="projects.html">Guest Houses</a>
+                            <a href="#">Guest Houses</a>
                           </li>
                           <li>
-                            <a href="projects-single.html">Hotels</a>
+                            <a href="#">Hotels</a>
                           </li>
                         </ul>
                       </li>
@@ -72,13 +78,7 @@ const Nav = () => {
                             <a href="#">2 Bedrooms</a>
                           </li>
                           <li>
-                            <a href="#">3 Bedrooms</a>
-                          </li>
-                          <li>
-                            <a href="#">4 Bedrooms</a>
-                          </li>
-                          <li>
-                            <a href="#">6 Bedrooms</a>
+                            <a href="#">3 Bedrooms and More</a>
                           </li>
                         </ul>
                       </li>
@@ -91,12 +91,6 @@ const Nav = () => {
                           Big Structures <i className="fa fa-angle-down" />
                         </a>
                         <ul className="dropdown-menu" role="menu">
-                          <li>
-                            <a href="#">College</a>
-                          </li>
-                          <li>
-                            <a href="#">Factory/Estate</a>
-                          </li>
                           <li className="dropdown-submenu">
                             <a
                               href="#!"
@@ -114,6 +108,12 @@ const Nav = () => {
                               </li>
                             </ul>
                           </li>
+                          <li>
+                            <a href="#">College</a>
+                          </li>
+                          <li>
+                            <a href="#">Factory/Estate</a>
+                          </li>
                         </ul>
                       </li>
                       <li className="nav-item dropdown">
@@ -122,16 +122,16 @@ const Nav = () => {
                           className="nav-link dropdown-toggle"
                           data-toggle="dropdown"
                         >
-                          FAQ <i className="fa fa-angle-down" />
+                          FAQ
                         </a>
                       </li>
                       <li className="nav-item">
-                        <a className="nav-link" href="contact.html">
+                        <a className="nav-link" href="#">
                           Contact Us
                         </a>
                       </li>
                       <li className="header-get-a-quote">
-                        <a className="btn btn-primary" href="contact.html">
+                        <a className="btn btn-primary" href="#">
                           Book Appointment
                         </a>
                       </li>

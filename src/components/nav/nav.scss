@@ -1,23 +1,11 @@
-.header {
-  background: #fff;
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.15);
-  padding: 15px 0;
+.header-two {
 
-  .navbar {
-    border-radius: 0;
-    border: 0;
-    margin-bottom: 0;
+  .logo {
+    cursor: pointer;
 
-    .navbar-toggler {
-      margin: 10px 0;
-      padding: 6px;
-      border-radius: 0;
-      font-size: 1rem;
-      background: #ffb600;
-
-      .navbar-toggler-icon {
-        color: #fff;
-      }
+    img {
+      height: 50px;
     }
   }
+
 }
